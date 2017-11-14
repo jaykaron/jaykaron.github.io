@@ -15,8 +15,11 @@ function addComponent(sourceFile, anchor, info, component)
     loadComponent("../../../components/"+sourceFile, anchor, info);
     return;
   }
+  
   for(var i=0; i<info.length; i++)
     component = component.replace("TEMP",info[i]);
+  console.log(component);
+  console.log($("#"+anchor.id));
   $("#"+anchor.id).replaceWith(component);
 }
 
