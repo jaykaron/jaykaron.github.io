@@ -1,0 +1,50 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+body
+{
+    background-color: dodgerblue;
+}
+
+.jumbotron
+{
+  border-radius: 0px;
+  min-height: 25rem;
+}
+
+.preview
+{
+  margin: 0.5rem;
+  max-width:30rem;
+  min-height: 12rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:1.5rem;
+
+  box-shadow: 5px 5px 0px #3b3b3b;    // make this into a mixin
+}
+.card-title
+{
+  font-size: 1.5rem;
+}
+.quote
+{
+  line-height: normal;
+}
+
+#jumboBackIcon
+{
+  font-size: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.fa-laptop
+{
+  text-shadow: 2px 5px 0px #3b3b3b;
+}
