@@ -1,4 +1,4 @@
-var toRender = $("comp");
+var toRender = $("presto");
 for(var i=0; i<toRender.length; i++)
   render(toRender[i]);
 
@@ -18,8 +18,6 @@ function addComponent(sourceFile, anchor, info, component)
   
   for(var i=0; i<info.length; i++)
     component = component.replace("TEMP",info[i]);
-  console.log(component);
-  console.log($("#"+anchor.id));
   $("#"+anchor.id).replaceWith(component);
 }
 
