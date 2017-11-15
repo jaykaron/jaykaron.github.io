@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <presto data-type="common-head" id="common-head"></presto>
+    <presto data-type="common-head"></presto>
     
     <title>Jay Karon - Projects</title>
   </head>
   <body>
-    <presto data-type="nav" id="nav"></presto>
+    <presto data-type="nav"></presto>
     
     <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -37,17 +37,11 @@
     
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-md-3 justify-content-center">
-          <div class="card text-center preview border-secondary">
-            <div class="card-body">
-              <h4 class="card-title">Chroma</h4>
-              <hr class="bg-secondary"/>
-              <h6 class="card-subtitle mb-2 text-muted quote">The only source of knowledge is experience.<br />- Albert Einstein</h6>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 justify-content-center">
+        
+        <presto data-type="card" class="col-md-3"
+        data-text="Chroma|A JavaScript platormer powered by Paper.js|Let's see!" ></presto>
+        
+        <!-- <div class="col-md-3 justify-content-center">
           <div class="card text-center preview border-secondary">
             <div class="card-body">
               <h4 class="card-title">Projects</h4>
@@ -66,7 +60,7 @@
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="row justify-content-center">
         <div class="col-md-3 justify-content-center">
@@ -101,6 +95,7 @@
         </div>
       </div>
     </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
