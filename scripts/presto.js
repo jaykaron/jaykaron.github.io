@@ -2,33 +2,40 @@ var toRender = $("presto");
 for(var i=0; i<toRender.length; i++)
   render(toRender[i]);
 
-function render(item){
+function render(anchor){
   var text = []
-  if(item.getAttribute("data-text"))
-    text = item.getAttribute("data-text").split("|");
-  addComponent(item.getAttribute("data-type")+".html", item, text, null);
+  if(anchor.getAttribute("p-text"))
+    text = anchor.getAttribute("p-text").split("|");
+  var type = anchor.getAttribute("p-type")
+  addComponent(type, anchor, text, null);
 }
 
-function addComponent(sourceFile, anchor, info, component)
+function addComponent(type, anchor, info, component)
 {
   if(!component) {
-    loadComponent("../../../components/"+sourceFile, anchor, info);
+    loadComponent(type, anchor, info);
     return;
   }
   component = $.parseHTML(component);
   $(anchor).replaceWith(component);
   component = $(component);   // finds the component in the DOM
-  console.log(anchor.className);
   component.addClass(anchor.className);
   
   for(var i=0; i<info.length; i++) {
     spanToReplace = component.find("#holder"+i);
     spanToReplace.replaceWith(info[i]);
   }
+  
+  if( type == "nav")
+    navAddActive(anchor.getAttribute("p-activeI"));
 }
 
-function loadComponent(sourceFile, anchor, info){
-  $.get(sourceFile, function(data) {
-    addComponent(sourceFile, anchor, info, data); 
+function loadComponent(type, anchor, info){
+  $.get("../../../components/"+type+".html", function(p) {
+    addComponent(type, anchor, info, p); 
   }, "html");
+}
+
+function navAddActive(activeI) {
+  $($("nav li")[Number.parseInt(activeI)]).addClass("active");
 }
