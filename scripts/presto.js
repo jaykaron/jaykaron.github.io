@@ -1,4 +1,4 @@
-var toRender = $("comp");
+var toRender = $("presto");
 for(var i=0; i<toRender.length; i++)
   render(toRender[i]);
 
@@ -15,12 +15,16 @@ function addComponent(sourceFile, anchor, info, component)
     loadComponent("../../../components/"+sourceFile, anchor, info);
     return;
   }
+  component = $.parseHTML(component);
+  $(anchor).replaceWith(component);
+  component = $(component);   // finds the component in the DOM
+  console.log(anchor.className);
+  component.addClass(anchor.className);
   
-  for(var i=0; i<info.length; i++)
-    component = component.replace("TEMP",info[i]);
-  console.log(component);
-  console.log($("#"+anchor.id));
-  $("#"+anchor.id).replaceWith(component);
+  for(var i=0; i<info.length; i++) {
+    spanToReplace = component.find("#holder"+i);
+    spanToReplace.replaceWith(info[i]);
+  }
 }
 
 function loadComponent(sourceFile, anchor, info){
