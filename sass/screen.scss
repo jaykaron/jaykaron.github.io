@@ -4,29 +4,23 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
 
 body
 {
     background-color: dodgerblue;
 }
 
-.jumbotron
-{
-  border-radius: 0px;
-  min-height: 25rem;
-}
-
-.preview
+.card
 {
   margin: 0.5rem;
-  max-width:30rem;
   min-height: 12rem;
 
   margin-left: auto;
   margin-right: auto;
   margin-bottom:1.5rem;
 
-  box-shadow: 5px 5px 0px #3b3b3b;    // make this into a mixin
+  @include box-shadow(#3b3b3b 5px 5px 0px);
 }
 .card-title
 {

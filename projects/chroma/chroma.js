@@ -210,6 +210,7 @@ function onKeyDown(event){
       case 'space':
         if(!gameOn)
           newGame();
+        return false;
         break;
     default:
       ;

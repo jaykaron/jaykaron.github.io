@@ -1,0 +1,9 @@
+.card {
+  max-width: 30rem;
+}
+
+.jumbotron
+{
+  border-radius: 0px;
+  min-height: 25rem;
+}

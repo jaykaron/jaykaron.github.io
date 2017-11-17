@@ -20,7 +20,7 @@ var timeIncrement = 10; // Number of seconds between level
 var initialGameSpeed = 1;
 var gameSpeed;
 var gameSpeedIncrement = 0.2; // How much the game speeds up each time
-var platformSpeed = 1.7;
+var platformSpeed = 2;
 
 var timePassed;
 var secondsPassed;     // The number of seconds since the game started
@@ -210,6 +210,7 @@ function onKeyDown(event){
       case 'space':
         if(!gameOn)
           newGame();
+        return false;
         break;
     default:
       ;
