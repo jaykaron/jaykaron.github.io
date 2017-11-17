@@ -8,10 +8,12 @@
   <script type="text/paperscript" src="chroma.js" canvas="mainCanvas"></script>
 </head>
 <body>
-  <presto p-type="nav" id="nav" p-activeI="2"></presto>
+  <presto p-type="nav" p-activeI="2"></presto>
   
-  <div class="container-fluid">
-    <canvas id="mainCanvas" width="1000" height="600"> </canvas>
+  <canvas id="mainCanvas" width="1000" height="600" tabindex="0"> </canvas>
+  <div class="d-flex container-fluid justify-content-center">
+    <presto p-type="card" class="col-xl-10"
+    p-text="Intro|A game I made."></presto>
   </div>
   <div id="images" class="hidden">
     <img id="background" src="imgs/background.png" width="1000" height="600" />
@@ -21,7 +23,6 @@
     <img id="volumeLow" src="imgs/volume-low.png" width="50" height="50" />
     <img id="volumeOff" src="imgs/volume-off2.png" width="50" height="50" />
   </div>
-  <br /><br />
   Sound icons from <a href="http://ionicons.com/">ionicons <img src="imgs/ionic.png" style="vertical-align:middle;"/></a>
   
   <!-- Optional JavaScript -->

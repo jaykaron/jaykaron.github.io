@@ -67,39 +67,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 body {
   background-color: dodgerblue;
 }
 
-/* line 13, ../sass/screen.scss */
-.jumbotron {
-  border-radius: 0px;
-  min-height: 25rem;
-}
-
-/* line 19, ../sass/screen.scss */
-.preview {
+/* line 14, ../sass/screen.scss */
+.card {
   margin: 0.5rem;
-  max-width: 30rem;
   min-height: 12rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
-  box-shadow: 5px 5px 0px #3b3b3b;
+  -moz-box-shadow: #3b3b3b 5px 5px 0px;
+  -webkit-box-shadow: #3b3b3b 5px 5px 0px;
+  box-shadow: #3b3b3b 5px 5px 0px;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .card-title {
   font-size: 1.5rem;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .quote {
   line-height: normal;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 #jumboBackIcon {
   font-size: 9rem;
   margin-left: auto;
@@ -107,7 +102,7 @@ body {
   display: block;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .fa-laptop {
   text-shadow: 2px 5px 0px #3b3b3b;
 }
