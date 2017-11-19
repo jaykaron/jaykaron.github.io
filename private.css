@@ -21,3 +21,8 @@
 .fa-laptop {
   text-shadow: 2px 5px 0px #3b3b3b;
 }
+
+#p404card {     /* to override the .card max-width: for 404 page*/
+  max-width: none;
+  min-height: 18rem;
+}
