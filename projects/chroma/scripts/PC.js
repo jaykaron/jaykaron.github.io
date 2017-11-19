@@ -34,7 +34,7 @@ function PC(x, y) {
       this.box.y += deltaY;
       var vector = new Point(0, deltaY);
       this.path.position += vector;
-      if(this.box.topRight.y > screenHeight + 2) {
+      if(this.box.topRight.y > screenHeight + deltaY + 2) {
         gameOver();
       }
     }
