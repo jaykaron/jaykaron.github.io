@@ -1,9 +1,23 @@
+/* line 3, ../sass/private.scss */
 .card {
   max-width: 30rem;
 }
 
-.jumbotron
-{
+/* line 7, ../sass/private.scss */
+.jumbotron {
   border-radius: 0px;
   min-height: 25rem;
+}
+
+/* line 13, ../sass/private.scss */
+#jumboBackIcon {
+  font-size: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* line 21, ../sass/private.scss */
+.fa-laptop {
+  text-shadow: 2px 5px 0px #3b3b3b;
 }

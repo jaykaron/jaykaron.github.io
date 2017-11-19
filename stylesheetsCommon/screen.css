@@ -70,39 +70,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 9, ../sass/screen.scss */
 body {
   background-color: dodgerblue;
+  line-height: normal;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 .card {
-  margin: 0.5rem;
+  margin: 0.5rem auto 1.5rem auto;
   min-height: 12rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
   -moz-box-shadow: #3b3b3b 5px 5px 0px;
   -webkit-box-shadow: #3b3b3b 5px 5px 0px;
   box-shadow: #3b3b3b 5px 5px 0px;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .card-title {
   font-size: 1.5rem;
-}
-
-/* line 29, ../sass/screen.scss */
-.quote {
-  line-height: normal;
-}
-
-/* line 34, ../sass/screen.scss */
-#jumboBackIcon {
-  font-size: 9rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-/* line 41, ../sass/screen.scss */
-.fa-laptop {
-  text-shadow: 2px 5px 0px #3b3b3b;
 }
