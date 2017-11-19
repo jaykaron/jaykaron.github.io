@@ -9,16 +9,13 @@
 body
 {
     background-color: dodgerblue;
+    line-height: normal;
 }
 
 .card
 {
-  margin: 0.5rem;
+  margin: 0.5rem auto 1.5rem auto;  //top, right, bottom, left
   min-height: 12rem;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom:1.5rem;
 
   @include box-shadow(#3b3b3b 5px 5px 0px);
 }
@@ -26,19 +23,8 @@ body
 {
   font-size: 1.5rem;
 }
-.quote
-{
-  line-height: normal;
-}
 
-#jumboBackIcon
-{
-  font-size: 9rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-.fa-laptop
-{
-  text-shadow: 2px 5px 0px #3b3b3b;
-}
+// .fa-laptop
+// {
+//   @include text-shadow(2px 5px 0px #3b3b3b);
+// }
