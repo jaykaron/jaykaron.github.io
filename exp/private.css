@@ -1,0 +1,9 @@
+.card {
+  min-height: 20rem;
+  margin: 1rem; 
+}
+
+.cardImg {
+  width: 100%;
+  max-width: 250px;
+}
