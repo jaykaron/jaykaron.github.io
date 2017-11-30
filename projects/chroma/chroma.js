@@ -1,7 +1,6 @@
 
 // ********** Start of Chroma.js **********
 
-var background; // Background Image
 var pc;         // The player obj
 var platforms;   //Array holding all the platform obj.s
 var startTime;
