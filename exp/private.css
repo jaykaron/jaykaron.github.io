@@ -1,9 +1,13 @@
 .card {
   min-height: 20rem;
-  margin: 1rem; 
+  margin: 1rem;
 }
 
 .cardImg {
   width: 100%;
   max-width: 250px;
+}
+
+#lassondeLogo {
+  max-width: 400px;
 }
