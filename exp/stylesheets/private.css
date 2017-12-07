@@ -23,7 +23,12 @@
   max-width: 400px;
 }
 
-/* line 24, private.scss */
+/* line 23, private.scss */
+#netivLogo {
+  max-width: 330px;
+}
+
+/* line 27, private.scss */
 ul ul {
   font-size: 95%;
 }
