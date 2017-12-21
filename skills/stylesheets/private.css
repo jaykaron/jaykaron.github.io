@@ -8,3 +8,8 @@
 .list-group {
   word-wrap: normal;
 }
+
+/* line 10, private.scss */
+.card {
+  max-width: 40rem;
+}

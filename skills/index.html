@@ -8,75 +8,69 @@
   <body>
     <presto p-type="nav" p-activeI="3"></presto>
 
-    <div class="d-flex justify-content-center container-fluid">
-      <div class="row">
-        <presto p-type="card" class="col-xl-5 mx-4" p-text="Programming|Bread and Butter" >
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="list-group" role="tablist">
-                  <a class="list-group-item list-group-item-action active" data-toggle="list" href="#prog-java" role="tab">Java</a>
-                  <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-python" role="tab">Python</a>
-                  <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-eclipse" role="tab">Eclipse</a>
-                  <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-git" role="tab">GIT</a>
+    <div class="d-flex justify-content-center container-fluid row">
+      <presto p-type="card" class="col-lg-5 mx-4" p-text="Programming|Bread and Butter" >
+        <div class="container-fluid row">
+          <div class="col-3">
+            <div class="list-group" role="tablist">
+              <a class="list-group-item list-group-item-action active" data-toggle="list" href="#prog-java" role="tab">Java</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-python" role="tab">Python</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-eclipse" role="tab">Eclipse</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-git" role="tab">GIT</a>
+            </div>
+          </div>
+          <div class="tab-content col-9">
+            <div class="tab-pane fade show active" id="prog-java" role="tabpanel">
+              Java was the language covered most extensively in university.
+            </div>
+            <div class="tab-pane fade" id="prog-python" role="tabpanel">
+              <div class="row">
+                <div class="col-sm-8">
+                  The language I use for tinkering. Covered the basics in a Udacity course.
                 </div>
-              </div>
-              <div class="col-9">
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="prog-java" role="tabpanel">
-                    Java was the language covered most extensively in university.
-                  </div>
-                  <div class="tab-pane fade" id="prog-python" role="tabpanel">
-                    <div class="row">
-                      <div class="col-sm-8">
-                        The language I use for tinkering. Covered the basics in a Udacity course.
-                      </div>
-                      <div class="col-sm-4">
-                        <img src="imgs/python.png" class="img" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="prog-eclipse" role="tabpanel"></div>
-                  <div class="tab-pane fade" id="prog-git" role="tabpanel">See GITHUB</div>
+                <div class="col-sm-4">
+                  <img src="imgs/python.png" class="img" />
                 </div>
               </div>
             </div>
+            <div class="tab-pane fade" id="prog-eclipse" role="tabpanel"></div>
+            <div class="tab-pane fade" id="prog-git" role="tabpanel">See GITHUB</div>
           </div>
-        </presto>
-        <presto p-type="card" class="col-xl-5 mx-4" p-text="Web Development|Bread and Butter" >
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-3">
-                <div class="list-group" role="tablist">
-                  <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-java" role="tab">Java</a>
-                  <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-python" role="tab">Python</a>
-                  <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-eclipse" role="tab">Eclipse</a>
-                  <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-git" role="tab">GIT</a>
-                </div>
+        </div>
+      </presto>
+      <presto p-type="card" class="col-lg-5 mx-4" p-text="Web Development|Bread and Butter" >
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3">
+              <div class="list-group" role="tablist">
+                <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-java" role="tab">Java</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-python" role="tab">Python</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-eclipse" role="tab">Eclipse</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-git" role="tab">GIT</a>
               </div>
-              <div class="col-9">
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="list-java" role="tabpanel">
-                    Java was the language covered most extensively in university.
-                  </div>
-                  <div class="tab-pane fade" id="list-python" role="tabpanel">
-                    <div class="row">
-                      <div class="col-8">
-                        Lorem ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                      </div>
-                      <div class="col-4">
-                        <img src="imgs/python.png" class="img" />
-                      </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="list-java" role="tabpanel">
+                  Java was the language covered most extensively in university.
+                </div>
+                <div class="tab-pane fade" id="list-python" role="tabpanel">
+                  <div class="row">
+                    <div class="col-8">
+                      Lorem ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </div>
+                    <div class="col-4">
+                      <img src="imgs/python.png" class="img" />
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="list-eclipse" role="tabpanel">...</div>
-                  <div class="tab-pane fade" id="list-git" role="tabpanel">See GITHUB</div>
                 </div>
+                <div class="tab-pane fade" id="list-eclipse" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="list-git" role="tabpanel">See GITHUB</div>
               </div>
             </div>
           </div>
-        </presto>
-      </div>
+        </div>
+      </presto>
     </div>
 
     <!-- Optional JavaScript -->
