@@ -1,7 +1,7 @@
 <html>
 <head>
   <presto p-type="common-head" id="common-head"></presto>
-  <title>Chroma</title>
+  <title>JK - Chroma</title>
 
   <link rel="stylesheet" type="text/css" href="canvas.css" />
   <script type="text/javascript" src="paper-full.min.js"> </script>
@@ -9,14 +9,38 @@
 </head>
 <body>
   <presto p-type="nav" p-activeI="2"></presto>
-  
+
   <canvas id="mainCanvas" width="1000" height="600" tabindex="0"> </canvas>
   <div class="d-flex container-fluid justify-content-center">
     <presto p-type="card" class="col-xl-10" p-text="Chroma">
-      <h6 class="card-subtitle mb-2">Some nice details about the game and the process of making it here.</h6>
+      <h5>How To Play:</h5>
       <p>
-        Volume icon made by <a href="https://www.flaticon.com/authors/smashicons" target="_blank">Smash Icons</a> from www.flaticon.com 
+        To land on a platform you must be the same color as it. Go as far as you can!
       </p>
+      <h5>Controls:</h5>
+      <p>
+        <kbd>f</kbd> / <kbd>d</kbd> : Change Color
+      </p>
+      <p>
+        <kbd>Space</kbd> : Jump
+      </p>
+      <p>
+        <kbd>p</kbd> : Pause/Resume
+      </p>
+      <h5>Story:</h5>
+      <p class="long">
+        This game was originally a Java applet made for a final project in high-school by Ari Karon in 2014.
+        As 2014 passed and things progressed, Java applets became nearly impossible to run without installing a Java IDE.
+        So I decided to remake Chroma with JavaScript. The game uses the <a href="paperjs.org/">PaperJS</a> library for dealing with the canvas.
+      </p>
+      <h5>Credits:</h5>
+      <div id="creditsBox">
+        <p>Game design by Ari Karon.</p>
+        <p>Music: Choaz Fantasy by <a href="https://soundcloud.com/paragonx9" title="ParagonX9 on soundcloud">ParagonX9</a></p>
+        <p>
+          Volume icon made by <a href="https://www.flaticon.com/authors/smashicons" >Smash Icons</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a>
+        </p>
+      </div>
     </presto>
   </div>
   <div id="images" class="hidden">
@@ -26,7 +50,7 @@
     <img id="volumeLow" src="imgs/volume1.png" width="50" height="50" />
     <img id="volumeOff" src="imgs/volume0.png" width="50" height="50" />
   </div>
-  
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

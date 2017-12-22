@@ -6,7 +6,7 @@
 html, body, div, span, applet, object, iframe,
 blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, q, s, samp,
 small, tt, var,
 dl, dt, dd,
 fieldset, form, label, legend,
@@ -41,4 +41,9 @@ body {
 /* line 40, sass/screen.scss */
 .card-title {
   font-size: 1.5rem;
+}
+
+/* line 45, sass/screen.scss */
+p.long {
+  line-height: 135%;
 }
