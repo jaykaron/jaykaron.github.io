@@ -2,11 +2,16 @@
 .img {
   max-width: 100px;
   max-height: 100px;
+  width: 100%;
 }
 
 .list-group {
   word-wrap: normal;
 }
 .card {
-  max-width: 40rem;
+  max-width: 35rem;
+}
+
+.list-group-item.active {   // in case the text breaks out of the label
+  color: rgb(205, 205, 205);
 }

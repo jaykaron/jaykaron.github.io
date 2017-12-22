@@ -2,14 +2,20 @@
 .img {
   max-width: 100px;
   max-height: 100px;
+  width: 100%;
 }
 
-/* line 7, private.scss */
+/* line 8, private.scss */
 .list-group {
   word-wrap: normal;
 }
 
-/* line 10, private.scss */
+/* line 11, private.scss */
 .card {
-  max-width: 40rem;
+  max-width: 35rem;
+}
+
+/* line 15, private.scss */
+.list-group-item.active {
+  color: #cdcdcd;
 }
