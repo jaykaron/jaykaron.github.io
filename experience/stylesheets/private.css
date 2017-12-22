@@ -3,32 +3,33 @@
 .card {
   min-height: 20rem;
   margin: 1rem;
+  max-width: 60rem;
 }
-/* line 6, private.scss */
+/* line 7, private.scss */
 .card p {
   line-height: 120%;
 }
-/* line 10, private.scss */
+/* line 11, private.scss */
 .card ul {
   line-height: 140%;
 }
-/* line 14, private.scss */
+/* line 15, private.scss */
 .card img {
   width: 100%;
   max-width: 250px;
 }
 
-/* line 20, private.scss */
+/* line 21, private.scss */
 #lassondeLogo {
   max-width: 400px;
 }
 
-/* line 23, private.scss */
+/* line 24, private.scss */
 #netivLogo {
   max-width: 330px;
 }
 
-/* line 27, private.scss */
+/* line 28, private.scss */
 ul ul {
   font-size: 95%;
 }
