@@ -15,9 +15,10 @@
 #logoContainer {
   margin-top: auto;
   margin-bottom: auto;
+  overflow: hidden;
 }
 
-/* line 22, sass/private.scss */
+/* line 23, sass/private.scss */
 #jumboBackIcon {
   font-size: 9rem;
   margin-left: auto;
@@ -25,7 +26,7 @@
   display: block;
 }
 
-/* line 30, sass/private.scss */
+/* line 31, sass/private.scss */
 .fa-laptop {
   text-shadow: 2px 5px 0px #3b3b3b;
 }

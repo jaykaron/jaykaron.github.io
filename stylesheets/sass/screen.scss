@@ -24,10 +24,16 @@ html, body, div, span, applet, object, iframe,
     @include reset-font;
   }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body
 {
     background-color: dodgerblue;
     line-height: normal;
+    margin-bottom: 80px;
 }
 
 .card
@@ -51,4 +57,8 @@ footer {
   padding: 0.5rem 1rem 0.3rem 1rem;
   background-color: rgb(52, 58, 64);
   color: rgb(234, 236, 238);
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  overflow: scroll;
 }

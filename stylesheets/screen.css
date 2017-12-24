@@ -24,12 +24,19 @@ time, mark, audio, video {
 }
 
 /* line 27, sass/screen.scss */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 32, sass/screen.scss */
 body {
   background-color: dodgerblue;
   line-height: normal;
+  margin-bottom: 80px;
 }
 
-/* line 33, sass/screen.scss */
+/* line 39, sass/screen.scss */
 .card {
   margin: 0.5rem auto 1.5rem auto;
   min-height: 12rem;
@@ -38,20 +45,24 @@ body {
   box-shadow: #3b3b3b 5px 5px 0px;
 }
 
-/* line 40, sass/screen.scss */
+/* line 46, sass/screen.scss */
 .card-title {
   font-size: 1.5rem;
 }
 
-/* line 45, sass/screen.scss */
+/* line 51, sass/screen.scss */
 p.long {
   line-height: 135%;
 }
 
-/* line 49, sass/screen.scss */
+/* line 55, sass/screen.scss */
 footer {
   width: 100%;
   padding: 0.5rem 1rem 0.3rem 1rem;
   background-color: #343a40;
   color: #eaecee;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  overflow: scroll;
 }
