@@ -7,68 +7,89 @@
   </head>
   <body>
     <presto p-type="nav" p-activeI="3"></presto>
-
+    <div class="container">
     <div class="row d-flex justify-content-center">
-      <presto p-type="card" class="col-lg-5 mx-3" p-text="Programming" >
-        <div class="row">
-          <div class="col-3">
-            <div class="list-group" role="tablist">
-              <a class="list-group-item list-group-item-action active" data-toggle="list" href="#prog-java" role="tab">Java</a>
-              <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-python" role="tab">Python</a>
-              <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-eclipse" role="tab">Eclipse</a>
-              <a class="list-group-item list-group-item-action" data-toggle="list" href="#prog-git" role="tab">GIT</a>
-            </div>
-          </div>
-          <div class="tab-content col-9">
-            <div class="tab-pane fade show active" id="prog-java" role="tabpanel">
-              Java was the language covered most extensively in university.
-            </div>
-            <div class="tab-pane fade" id="prog-python" role="tabpanel">
-              <div class="row">
-                <div class="col-sm-8">
-                  The language I use for tinkering. Covered the basics in a Udacity course.
-                </div>
-                <div class="col-sm-4">
-                  <img src="imgs/python.png" class="img" />
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="prog-eclipse" role="tabpanel"></div>
-            <div class="tab-pane fade" id="prog-git" role="tabpanel">See GITHUB</div>
-          </div>
+      <presto p-type="card" class="col-lg-5 mx-3" p-text="Programming">
+        <ul class="skillsList">
+          <li>
+            <strong>Java</strong> - one of the most reliable and stable programming languages. The favourite language of York University professors.
+          </li>
+          <li>
+            <strong>Python</strong> - fun and fast, Python is my go-to language for tinkering and programming katas. Covered the basics with Udacity.
+          </li>
+          <li>
+            <strong>GIT</strong> - the most popular version control system out there. Check out my <a href="https://github.com/jaykaron">Github</a>!
+          </li>
+          <li>
+            <strong>Atom</strong> - my editor of choice, customizable, sleek. I'm also familiar with <strong>Eclipse</strong> from Java development.
+          </li>
+        </ul>
+        <div class="iconHolder">
+          <i class="fa fa-code" aria-hidden="true"></i>
         </div>
       </presto>
       <presto p-type="card" class="col-lg-5 mx-3" p-text="Web Development" >
-        <div class="row">
-          <div class="col-3">
-            <div class="list-group" role="tablist">
-              <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-java" role="tab">Java</a>
-              <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-python" role="tab">Python</a>
-              <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-eclipse" role="tab">Eclipse</a>
-              <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-git" role="tab">GIT</a>
-            </div>
-          </div>
-          <div class="tab-content col-9">
-            <div class="tab-pane fade show active" id="list-java" role="tabpanel">
-              Java was the language covered most extensively in university.
-            </div>
-            <div class="tab-pane fade" id="list-python" role="tabpanel">
-              <div class="row">
-                <div class="col-8">
-                  Lorem ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                </div>
-                <div class="col-4">
-                  <img src="imgs/python.png" class="img" />
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="list-eclipse" role="tabpanel">...</div>
-            <div class="tab-pane fade" id="list-git" role="tabpanel">See GITHUB</div>
-          </div>
+        <ul class="skillsList">
+          <li>
+            <strong>Sass</strong> - a <strong>CSS</strong> preprocessor that enables the development of cleaner and more effective CSS
+          </li>
+          <li>
+            <strong>Bootstrap</strong> - a HTML, CSS, and JS framework for developing responsive, mobile first projects on the web
+          </li>
+          <li>
+            <strong>JQuery</strong> - the most popular JavaScript library on the web
+          </li>
+          <li>
+            <strong>PaperJS</strong> - a vector graphics scripting framework for the HTML5 Canvas
+          </li>
+        </ul>
+        <div class="iconHolder">
+          <i class="fa fa-wifi" aria-hidden="true"></i>
         </div>
       </presto>
     </div>
-
+    <div class="row d-flex justify-content-center">
+      <presto p-type="card" class="col-lg-5 mx-3" p-text="Life Skills">
+        <ul class="skillsList">
+          <li>
+            <strong>Java</strong> - one of the most reliable and stable programming languages. The favourite language of York University professors.
+          </li>
+          <li>
+            <strong>Python</strong> - fun and fast, Python is my go-to language for tinkering and programming katas. Covered the basics with Udacity.
+          </li>
+          <li>
+            <strong>GIT</strong> - the most popular version control system out there. Check out my <a href="https://github.com/jaykaron">Github</a>!
+          </li>
+          <li>
+            <strong>Atom</strong> - my editor of choice, customizable, sleek. I'm also familiar with <strong>Eclipse</strong> from Java development.
+          </li>
+        </ul>
+        <div class="iconHolder">
+          <i class="fa fa-diamond" aria-hidden="true"></i>
+        </div>
+      </presto>
+      <presto p-type="card" class="col-lg-5 mx-3" p-text="Other Interests">
+        <ul class="skillsList">
+          <li>
+            <strong>Sass</strong> - a <strong>CSS</strong> preprocessor that enables the development of cleaner and more effective CSS
+          </li>
+          <li>
+            <strong>Bootstrap</strong> - a HTML, CSS, and JS framework for developing responsive, mobile first projects on the web
+          </li>
+          <li>
+            <strong>JQuery</strong> - the most popular JavaScript library on the web
+          </li>
+          <li>
+            <strong>PaperJS</strong> - a vector graphics scripting framework for the HTML5 Canvas
+          </li>
+        </ul>
+        <div class="iconHolder">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </div>
+      </presto>
+    </div>
+    </div>
+    <presto p-type="footer"></presto>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
