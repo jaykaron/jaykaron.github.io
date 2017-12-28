@@ -1,0 +1,40 @@
+/* line 2, private.scss */
+.img {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+}
+
+/* line 8, private.scss */
+.list-group {
+  word-wrap: normal;
+}
+
+/* line 11, private.scss */
+.card {
+  max-width: 35rem;
+  height: 25rem;
+  overflow: auto;
+}
+
+/* line 17, private.scss */
+.list-group-item.active {
+  color: #cdcdcd;
+}
+
+/* line 21, private.scss */
+.skillsList {
+  list-style-type: none;
+  text-align: left;
+  text-indent: -20px;
+  line-height: 135%;
+}
+/* line 27, private.scss */
+.skillsList li {
+  margin-bottom: 0.3rem;
+}
+
+/* line 32, private.scss */
+.iconHolder {
+  font-size: 5rem;
+}
