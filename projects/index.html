@@ -38,19 +38,61 @@
     <div class="container-fluid">
       <div class="row justify-content-center mx-1">
 
-        <presto p-type="card" class="col-md-4" p-text="Chroma" >
+        <presto p-type="card" class="col-md-3" p-text="Chroma" >
           <h6 class="card-subtitle mb-2 text-muted">A <strong>JavaScript</strong> platormer powered by <strong>Paper.js</strong>.</h6>
           <a href="chroma/" class="btn btn-primary">Let's see!</a>
         </presto>
 
-        <presto p-type="card" class="col-md-4" p-text="This Website" >
+        <presto p-type="card" class="col-md-3" p-text="This Website" >
           <h6 class="card-subtitle mb-2 text-muted">See the story of the making of this website. Using <strong>JQuery</strong>, <strong>Bootstrap</strong> and <strong>SASS</strong>.</h6>
-          <a href="web/" class="btn btn-primary">Let's see!</a>
+          <a href="web/" class="btn btn-primary" data-toggle="modal" data-target="#websiteModal">Expand</a>
+        </presto>
+
+        <presto p-type="card" class="col-md-3" p-text="Wikipedia Graph" >
+          <h6 class="card-subtitle mb-2 text-muted">A <strong>Python</strong> widget that gets the Jewish halachic times off  </h6>
+          <p>
+            <span class='badge badge-warning'>Under Development</span>
+          </p>
+          <a href="web/" class="btn btn-primary">Expand</a>
         </presto>
 
       </div>
     </div>
     <presto p-type="footer"></presto>
+
+    <div class="modal fade" id="websiteModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="container-fluid text-center">
+              <h4 class="modal-title">This Website</h4>
+            </div>
+            <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          </div>
+          <div class="modal-body p-4">
+            <p class="lead">
+              Hi there!
+            <p />
+            <p>
+              After learning a little bit of <strong>HTML</strong>, <strong>CSS</strong>
+              and <strong>JavaScript</strong> in high-school and university, I wanted to hone my skills
+              and get some experience using some newer web technologies.
+            </p>
+            <p>
+              I started out using only vanilla <strong>jQuery</strong> and <strong>SASS</strong>,
+              but after spending a considerable amount of time working on this <a href="misc/oldPage.html">cool nav-bar</a>, I asked
+              myself <i>"Was that really worth it?"</i> and switched to <strong>Bootstrap</strong>.
+            </p>
+            <p>
+              With Bootstrap it takes about 2 minutes to make the nav-bar at the top of this page. So that
+              definitely sped things up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
