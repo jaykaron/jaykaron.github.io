@@ -16,10 +16,10 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a href="chroma/"><img class="d-block w-100" src="imgs/chromaTitle.png" alt="First slide"></a>
+          <a href="chroma/"><img class="d-block w-100" src="imgs/chromaTitle.png" alt="Chroma"></a>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="imgs/carousel2.png" alt="Second slide">
+          <a href="." data-toggle="modal" data-target="#websiteModal"><img class="d-block w-100" src="imgs/web.png" alt="Second slide"></a>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="imgs/carousel3.png" alt="Third slide">
@@ -44,12 +44,13 @@
         </presto>
 
         <presto p-type="card" class="col-md-3" p-text="This Website" >
-          <h6 class="card-subtitle mb-2 text-muted">See the story of the making of this website. Using <strong>JQuery</strong>, <strong>Bootstrap</strong> and <strong>SASS</strong>.</h6>
-          <a href="web/" class="btn btn-primary" data-toggle="modal" data-target="#websiteModal">Expand</a>
+          <h6 class="card-subtitle mb-2 text-muted">How this website was made. Using <strong>jQuery</strong>, <strong>Bootstrap</strong> and <strong>SASS</strong>.</h6>
+          <a href="." class="btn btn-primary" data-toggle="modal" data-target="#websiteModal">Expand</a>
         </presto>
 
         <presto p-type="card" class="col-md-3" p-text="Wikipedia Graph" >
-          <h6 class="card-subtitle mb-2 text-muted">A <strong>Python</strong> widget that gets the Jewish halachic times off  </h6>
+          <h6 class="card-subtitle mb-2 text-muted">An attempt to make a graph database of Wikipedia's network.
+            Using <strong>Neo4J</strong> and <strong>Cypher</strong>.</h6>
           <p>
             <span class='badge badge-warning'>Under Development</span>
           </p>
@@ -72,9 +73,6 @@
           </button>
           </div>
           <div class="modal-body p-4">
-            <p class="lead">
-              Hi there!
-            <p />
             <p>
               After learning a little bit of <strong>HTML</strong>, <strong>CSS</strong>
               and <strong>JavaScript</strong> in high-school and university, I wanted to hone my skills
@@ -82,13 +80,24 @@
             </p>
             <p>
               I started out using only vanilla <strong>jQuery</strong> and <strong>SASS</strong>,
-              but after spending a considerable amount of time working on this <a href="misc/oldPage.html">cool nav-bar</a>, I asked
+              but after spending a considerable amount of time working on this <a href="misc/oldPage.html">cool nav-bar</a> <small>(please excuse the color scheme)</small>, I asked
               myself <i>"Was that really worth it?"</i> and switched to <strong>Bootstrap</strong>.
             </p>
             <p>
-              With Bootstrap it takes about 2 minutes to make the nav-bar at the top of this page. So that
-              definitely sped things up.
+              With Bootstrap it takes about 2 minutes to make the nav-bar at the top of this page
+              which works across browsers and has mobile support. So that definitely sped things up.
             </p>
+            <p>
+              After that it was pretty smooth sailing, all that was required was time.
+              Time for going through Bootstrap's documentation, time for fiddling with the CSS, etc.
+            </p>
+            <h5>Takeaway</h5>
+            <p>
+              While I did familiarize myself with current tools used in making static websites.
+              I realized, more importantly, that I don't particularly enjoy making static websites.
+              There is little analyzing or heavy thinking involved, just finding the right part and
+              fiddling around until it looks right.
+            <p/>
           </div>
         </div>
       </div>
