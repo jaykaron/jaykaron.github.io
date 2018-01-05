@@ -19,7 +19,7 @@
           <a href="chroma/"><img class="d-block w-100" src="imgs/chromaTitle.png" alt="Chroma"></a>
         </div>
         <div class="carousel-item">
-          <a href="." data-toggle="modal" data-target="#websiteModal"><img class="d-block w-100" src="imgs/web.png" alt="Second slide"></a>
+          <a href="#" data-toggle="modal" data-target="#websiteModal"><img class="d-block w-100" src="imgs/web.png" alt="Second slide"></a>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="imgs/carousel3.png" alt="Third slide">
@@ -40,12 +40,12 @@
 
         <presto p-type="card" class="col-md-3" p-text="Chroma" >
           <h6 class="card-subtitle mb-2 text-muted">A <strong>JavaScript</strong> platormer powered by <strong>Paper.js</strong>.</h6>
-          <a href="chroma/" class="btn btn-primary">Let's see!</a>
+          <a href="chroma/" class="btn btn-primary">Enter</a>
         </presto>
 
         <presto p-type="card" class="col-md-3" p-text="This Website" >
           <h6 class="card-subtitle mb-2 text-muted">How this website was made. Using <strong>jQuery</strong>, <strong>Bootstrap</strong> and <strong>SASS</strong>.</h6>
-          <a href="." class="btn btn-primary" data-toggle="modal" data-target="#websiteModal">Expand</a>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#websiteModal">Expand</a>
         </presto>
 
         <presto p-type="card" class="col-md-3" p-text="Wikipedia Graph" >
@@ -54,11 +54,21 @@
           <p>
             <span class='badge badge-warning'>Under Development</span>
           </p>
-          <a href="web/" class="btn btn-primary">Expand</a>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#wikiModal">Expand</a>
         </presto>
 
       </div>
     </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center mx-1">
+        <presto p-type="card" class="col-md-3" p-text="Rogue" >
+          <h6 class="card-subtitle mb-2 text-muted">A turn-based, top-down, RPG, ASCII adventure written in <strong>Java</strong>. High-school final project.</h6>
+          <a href="chroma/" class="btn btn-primary">Expand</a>
+        </presto>
+      </div>
+    </div>
+
     <presto p-type="footer"></presto>
 
     <div class="modal fade" id="websiteModal" tabindex="-1" role="dialog">
@@ -98,6 +108,36 @@
               There is little analyzing or heavy thinking involved, just finding the right part and
               fiddling around until it looks right.
             <p/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="wikiModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="container-fluid text-center">
+              <h4 class="modal-title">Wikipedia Graph</h4>
+            </div>
+            <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              A joint attempt with my brother to graph the links of Wikipedia and find out something usesful.
+            </p>
+            <p>
+              So far we have found out that their are lots of links. We are working on sorting them out.
+            </p>
+            <p>
+              We are using <strong>Python</strong> to scrape Wikipedia and putting the results into a <strong>Neo4J</strong> database,
+              a system for graph databases that has a special query language called <strong>Cypher</strong>.
+            </p>
+            <p>
+              You can see the existing code in the <a href="https://github.com/jaykaron/WikiGraph">Github repository</a>.
+            </p>
           </div>
         </div>
       </div>
