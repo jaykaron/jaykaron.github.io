@@ -3,14 +3,13 @@
 @import "compass/css3";
 
 .card {
-  max-width: 30rem;
+  max-width: 27rem;
 }
 
 .jumbotron
 {
-  border-radius: 0px;
-  min-height: 25rem;
-  padding-top: 2rem;
+  border-radius: 0px;   // no rounded corners
+  padding-top: 2rem;  // a little shorter than default
   padding-bottom: 2rem;
 }
 

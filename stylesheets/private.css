@@ -1,24 +1,23 @@
 /* line 5, sass/private.scss */
 .card {
-  max-width: 30rem;
+  max-width: 27rem;
 }
 
 /* line 9, sass/private.scss */
 .jumbotron {
   border-radius: 0px;
-  min-height: 25rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 17, sass/private.scss */
+/* line 16, sass/private.scss */
 #logoContainer {
   margin-top: auto;
   margin-bottom: auto;
   overflow: hidden;
 }
 
-/* line 23, sass/private.scss */
+/* line 22, sass/private.scss */
 #jumboBackIcon {
   font-size: 9rem;
   margin-left: auto;
@@ -26,7 +25,7 @@
   display: block;
 }
 
-/* line 31, sass/private.scss */
+/* line 30, sass/private.scss */
 .fa-laptop {
   text-shadow: 2px 5px 0px #3b3b3b;
 }
