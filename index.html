@@ -59,17 +59,19 @@
 
         <presto p-type="card" class="col-lg-5" p-text="Contact">
           <h6 class="card-subtitle mb-2 text-muted">Good words are worth much and cost little.<br />- George Herbert</h6>
-          <a href="contact/" class="btn btn-primary">Expand</a>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Expand</a>
         </presto>
       </div>
     </div>
 
     <!--Under Construction Modal -->
-    <div class="modal fade" id="constructionModal" tabindex="-1" role="dialog">
+    <!-- <div class="modal fade" id="constructionModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title"><i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:gold;"></i> Under Construction! <i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:gold;"></i></h5>
+            <div class="container-fluid text-center">
+              <h5 class="modal-title"><i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:gold;"></i> Under Construction! <i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:gold;"></i></h5>
+            </div>
             <button type="button" class="close" data-dismiss="modal">
             <span>&times;</span>
           </button>
@@ -89,7 +91,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    
     <presto p-type="footer"></presto>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -98,10 +101,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <!--  Custom Scripts -->
     <script type="text/javascript" src="../../../scripts/presto.js"></script>
-    <script type="text/javascript">
+
+    <!-- Open Construction Modal on page load -->
+    <!-- <script type="text/javascript">
       window.onload = function() {
-        $('#constructionModal').modal('toggle');    // Pop up the construction modal on page load
+        $('#contactModal').modal('toggle');    // Pop up the construction modal on page load
       };
-    </script>
+    </script> -->
   </body>
 </html>
