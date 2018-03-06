@@ -21,8 +21,65 @@
     <meta name="description" content="Home page of Jay Karon's portfolio website.">
   </head>
   <body>
-    <presto p-type="nav" p-activeI="0"></presto>
-
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Jay Karon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../../../">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../../experience/">Experience &amp; Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../../projects/">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../../skills/">Skills &amp; Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="container-fluid text-center">
+              <h5 class="modal-title">Contact</h5>
+            </div>
+            <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">
+              Thanks for wanting to contact me!
+            <p />
+            <ul>
+              <li>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> Email me at <a href="mailto:jay.karon.website@gmail.com">jay.karon.website@gmail.com</a>
+              </li>
+              <li>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i> Find me on <a href="https://www.linkedin.com/in/jaykaron/">LinkedIn</a>
+              </li>
+              <li>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Grab a copy of my <a href="imgs/jayKaronResume.pdf">resume</a>
+              </li>
+            </ul>
+            Looking forward to hearing from you,
+            <br />
+            Jay Karon
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="jumbotron px-5">
       <div class=container>
         <div class="row justify-content-around">
