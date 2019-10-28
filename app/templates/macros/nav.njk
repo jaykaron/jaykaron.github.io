@@ -1,0 +1,31 @@
+{% macro nav_(activeIndex=0) %}
+  {# Creates the nav bar
+    activeIndex - integer, which link should be made active, (0-indexed)
+   #}
+  {% set links = [
+    ["../../../", "Home"],
+    ["../../../experience/", "Experience & Education"],
+    ["../../../projects/", "Projects"],
+    ["../../../skills/", "Skills & Interests"]
+  ] %}
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="../../../">Jay Karon</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        {% for link in links %}
+        <li class="nav-item">
+          <a class="nav-link {% if loop.index0 == activeIndex %} active {% endif %}" href="{{ link[0] }}"> {{ link[1] }}</a>
+        </li>
+        {% endfor %}
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+{% endmacro %}

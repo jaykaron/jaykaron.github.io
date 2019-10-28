@@ -1,0 +1,28 @@
+{
+  "name": "jaykaron.github.io",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-nunjucks-render": "^2.2.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  },
+  "scripts": {
+    "build": "./node_modules/gulp/bin/gulp.js build",
+    "watch": "./node_modules/gulp/bin/gulp.js watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaykaron/jaykaron.github.io.git"
+  },
+  "author": "jaykaron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaykaron/jaykaron.github.io/issues"
+  },
+  "homepage": "https://github.com/jaykaron/jaykaron.github.io#readme"
+}

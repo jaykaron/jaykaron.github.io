@@ -1,0 +1,15 @@
+{% macro card_(title, subtitle, content, additionalClass='') %}
+  {# creates a rectangular card
+    title - string
+    subtitle - string
+    content - html
+  #}
+  <div class="card text-center preview border-secondary {{additionalClass}}">
+    <div class="card-body">
+      <h4 class="card-title">{{ title }}</h4>
+      <h6 class="h6 card-subtitle text-muted">{{ subtitle }}</h6>
+      <hr class="bg-secondary"/>
+      {{ content | safe }}
+    </div>
+  </div>
+{% endmacro %}

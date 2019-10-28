@@ -1,0 +1,29 @@
+{% macro experienceCard_(title, subtitle, entries, imagePath, imageId) %}
+{#  Makes an experience card
+    title - string
+    subtitle - string
+    entries - array of tuples [[heading - string, content - html], [...], ...]
+#}
+
+{% from 'macros/card.njk' import card_ %}
+
+{% set content %}
+  <div class="row">
+    <div class="col-md-6 text-left px-3">
+      {% for entry in entries %}
+        <h6 class="text-muted">{{ entry[0] }}</h6>    {# heading #}
+        {{ entry[1] | safe }}   {# html content #}
+      {% endfor %}
+    </div>
+    <div class="col-md-6">
+      <img class="cardImg mt-3" id="{{imageId}}" src="{{imagePath}}" />
+    </div>
+  </div>
+{% endset %}
+
+<div class="d-flex justify-content-center">
+
+  {{ card_(title, subtitle, content) }}
+</div>
+
+{% endmacro %}

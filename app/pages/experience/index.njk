@@ -1,0 +1,98 @@
+{% from 'macros/experienceCard.njk' import experienceCard_ %}
+
+{% extends "layout.njk" %}
+{% set activeIndex = 1 %}
+{% set title = 'JK - Experience' %}
+{% set metaDescription = 'Experience page of Jay Karon\'s portfolio website.' %}
+
+{% block content %}
+
+  <div class="d-flex justify-content-center"> <!-- York -->
+    {% set yorkContent1 %}
+      <ul>
+        <li>
+          A average
+        </li>
+        <li>
+          Merei Family Scholarship <a href="imgs/PounderAward.pdf" ><i class="fa fa-file-pdf-o ml-1" aria-hidden="true"></i></a>
+          <ul>
+            <li>
+              Received a monetary award for achieving the highest GPA among upper year students of Lassonde School of Engineering.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Irvine Pounder Math Award <a href="imgs/PounderAward.pdf" ><i class="fa fa-file-pdf-o ml-1" aria-hidden="true"></i></a>
+          <ul>
+            <li>
+              awarded to the top student of the year in Mathematics and Statistics
+            </li>
+          </ul>
+        </li>
+        <li>
+          Chair\'s Honour Roll - Mathematics and Statistics <a href="imgs/MathHonour.pdf"><i class="fa fa-file-pdf-o ml-1" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    {% endset %}
+
+    {{ experienceCard_('HBSc of Computer Science', 'Lassonde School of Engineering - York University',
+      [['September 2016 - August 2019', '
+      <p>
+        Completed an honours bachelors of Computer. My favourite courses were
+        Computer Vision and Intro to Advanced Data Structures.
+      </p>'],
+      ['Notable achievements:', yorkContent1]],
+      'imgs/lassondeYork.jpg', 'lassondeLogo'
+      ) }}
+   </div>
+   <div class="d-flex justify-content-center">
+     {% set louisContent1 %}
+       <ul>
+         <li>
+           assessing donor activity on fundraising database software <strong>Raiser's Edge</strong>
+         </li>
+         <li>
+           creating dynamic <strong>Excel</strong> spreadsheets using <strong>VBA</strong> macros
+         </li>
+         <li>
+           making custom <strong>Word</strong> templates
+         </li>
+         <li>
+           assisting in office duties such as writing letters and answering phone calls
+         </li>
+       </ul>
+      {% endset %}
+     {{ experienceCard_('Donor Information Coordinator', 'Louis Brier Jewish Aged Foundation',
+       [['July 2016 - August 2016', '
+       <p>
+         A summer internship working for the Louis Brier Jewish Aged Foundation, a foundation
+         that raises funds to support programs and services needed by the Louis Brier Home & Hospital and Weinberg Residence,
+         a Jewish resident care home located in Vancouver, BC.
+       </p>'],
+       ['Responsibilities included:', louisContent1]],
+       'imgs/louisbrier2.png', ''
+       ) }}
+   </div>
+  <div class="d-flex justify-content-center"> <!-- Moshava -->
+    {{ experienceCard_('Summer Camp Counselor', 'Camp Moshava Ennismore',
+      [['July 2015 - August 2015', '
+      <p>
+        Co-piloted a bunk of 10 rambunctious pre-teens for the summer at Camp Moshava Ennismore,
+        a Jewish Summer Camp located outside of Ennismore, Ontario.
+      </p>'],
+      ['Responsibilities included:', '
+      <ul>
+        <li>
+          running activities
+        </li>
+        <li>
+          resolving disputes
+        </li>
+        <li>
+          ensuring enjoyment
+        </li>
+      </ul>']],
+      'imgs/moshava.jpg', ''
+      ) }}
+  </div>
+{% endblock %}
