@@ -25,7 +25,7 @@ function build(cb) {
 
 function watch(cb) {
   browserSyncServer(cb);
-  gulp.watch('app/pages/**/*.+(html|nunjucks|njk)', build);
+  gulp.watch('app/(pages|templates)/**/*.+(html|nunjucks|njk)', build);
   gulp.watch('app/dist/**/*.html').on('change', reload);
 }
 
