@@ -33,4 +33,129 @@
   </a>
 </div>
 
+<div class="container-fluid">
+  <div class="row justify-content-center mx-1">
+
+    {{ card_('Hoodie', '', '
+    <h6 class="card-subtitle mb-2 text-muted">A <strong>GIS</strong> web app made for a week-long university competition.</h6>
+    <a href="https://github.com/jaykaron/Hoodie" class="btn btn-primary mx-2">Info</a> <a href="https://jaykaron.github.io/Hoodie/" class="btn btn-primary mx-2">App</a>',
+    additionalClass='col-md-3') }}
+
+    {{ card_('Chroma', '', '
+    <h6 class="card-subtitle mb-2 text-muted">A <strong>JavaScript</strong> platormer powered by <strong>Paper.js</strong>.</h6>
+    <a href="chroma/" class="btn btn-primary">Enter</a>',
+    additionalClass='col-md-3') }}
+
+    {{ card_('This Website', '', '
+    <h6 class="card-subtitle mb-2 text-muted">How this website was made. Using <strong>jQuery</strong>, <strong>Bootstrap</strong> and <strong>SASS</strong>.</h6>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#websiteModal">Expand</a>',
+    additionalClass='col-md-3') }}
+
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row justify-content-center mx-1">
+
+    {{ card_('Rogue', '', '
+    <h6 class="card-subtitle mb-2 text-muted">A turn-based, top-down, RPG, ASCII adventure written in <strong>Java</strong>. High-school final project.</h6>
+    <a href="rogue/" class="btn btn-primary">Enter</a>',
+    additionalClass='col-md-3') }}
+
+    {{ card_('Peshitta Transmutation', '', '
+    <h6 class="card-subtitle mb-2 text-muted">Transmuting a translation of the Hebrew Bible from Syriac to Hebrew</h6>
+    <a href="https://github.com/jaykaron/peshittaTransmutation" class="btn btn-primary">Github</a>',
+    additionalClass='col-md-3') }}
+
+    {{ card_('Wikipedia Graph', '', '
+    <p>
+      <span class="badge badge-danger">Project Terminated</span>
+    </p>
+    <h6 class="card-subtitle mb-2 text-muted">An attempt to make a graph database of Wikipedia\'s network.
+      Using <strong>Neo4J</strong> and <strong>Cypher</strong>.</h6>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#wikiModal">Expand</a>',
+    additionalClass='col-md-3') }}
+
+  </div>
+</div>
+
+<div class="modal fade" id="websiteModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="container-fluid text-center">
+          <h4 class="modal-title">This Website</h4>
+        </div>
+        <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      </div>
+      <div class="modal-body p-4">
+        <p>
+          After learning a little bit of <strong>HTML</strong>, <strong>CSS</strong>
+          and <strong>JavaScript</strong> in high-school and university, I wanted to hone my skills
+          and get some experience using some newer web technologies.
+        </p>
+        <p>
+          I started out using only vanilla <strong>jQuery</strong> and <strong>SASS</strong>,
+          but after spending a considerable amount of time working on this <a href="misc/oldPage.html">cool nav-bar</a> <small>(please excuse the color scheme)</small>, I asked
+          myself <i>"Was that really worth it?"</i> and switched to <strong>Bootstrap</strong>.
+        </p>
+        <p>
+          With Bootstrap it takes about 2 minutes to make the nav-bar at the top of this page
+          which works across browsers and has mobile support. So that definitely sped things up.
+        </p>
+        <p>
+          After that it was pretty smooth sailing, all that was required was time.
+          Time for going through Bootstrap's documentation, time for fiddling with the CSS, etc.
+        </p>
+        <h5>2019 Update</h5>
+        <p>
+            I was tired of all the copy and pasted code in HTML so I started using <b>Nunjucks</b>, a JS templating engine and <b>Gulp</b>
+            to spit out the static site. This has reduced the LOC signifcantly and has made it fun to update the website again.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="wikiModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="container-fluid text-center">
+          <h4 class="modal-title">Wikipedia Graph</h4>
+        </div>
+        <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      </div>
+      <div class="modal-body p-4">
+        <p>
+          A joint attempt with my brother to graph the links of Wikipedia and find out something usesful.
+        </p>
+        <p>
+          So far we have found out that their are lots of links. We are working on sorting them out.
+        </p>
+        <p>
+          We are using <strong>Python</strong> to scrape Wikipedia and putting the results into a <strong>Neo4J</strong> database,
+          a system for graph databases that has a special query language called <strong>Cypher</strong>.
+        </p>
+        <p>
+          You can see the existing code in the <a href="https://github.com/jaykaron/WikiGraph">Github repository</a>.
+          Here's a <a href="imgs/Science.svg">picture</a> of a lot of the articles connected to Science and the links between them to keep you busy.
+        </p>
+        <h5>Update</h5>
+        <p>
+          As we were working on this project, <a href="https://jwn.gr/">Jacob Wenger</a> made an beautiful site,
+           <a href="https://www.sixdegreesofwikipedia.com/">Six Degrees of Wikipedia</a>, that does something similar to
+           what we were envisioning. In addition, processing was taking us forever because we were working on consumer laptops.
+           Due to those two factors we decided to cancel the project.
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
