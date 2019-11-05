@@ -14,19 +14,19 @@ function browserSyncServer(cb) {
 
 function build(cb) {
   // Gets .html and .nunjucks files in pages
-  return gulp.src('app/pages/**/*.+(html|nunjucks|njk)')
+  return gulp.src('dev/pages/**/*.+(html|nunjucks|njk)')
   // Renders template with nunjucks
   .pipe(nunjucksRender({
-      path: ['app/templates']
+      path: ['dev/templates']
     }))
-  // output files in app folder
-  .pipe(gulp.dest('app/dist'))
+  // output files in root directory
+  .pipe(gulp.dest('.'))
 }
 
 function watch(cb) {
   browserSyncServer(cb);
-  gulp.watch('app/(pages|templates)/**/*.+(html|nunjucks|njk)', build);
-  gulp.watch('app/dist/**/*.html').on('change', reload);
+  gulp.watch('dev/(pages|templates)/**/*.+(html|nunjucks|njk)', build);
+  gulp.watch('**/*.html').on('change', reload);
 }
 
 exports.build = build;
