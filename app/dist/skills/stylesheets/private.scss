@@ -1,0 +1,34 @@
+
+.img {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+}
+
+.list-group {
+  word-wrap: normal;
+}
+.card {
+  // max-width: 35rem;
+  // height: 25rem;
+  overflow: auto;
+}
+
+.list-group-item.active {   // in case the text breaks out of the label
+  color: rgb(205, 205, 205);
+}
+
+.skillsList {
+  list-style-type: none;
+  text-align: left;
+  text-indent: -20px;
+  line-height: 135%;
+
+  li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.iconHolder {
+  font-size: 5rem;
+}

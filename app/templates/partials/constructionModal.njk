@@ -1,28 +1,30 @@
 <!--Under Construction Modal -->
-<div class="modal fade" id="constructionModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="container-fluid text-center">
-          <h5 class="modal-title"><i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:gold;"></i> Under Construction! <i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:gold;"></i></h5>
-        </div>
-        <button type="button" class="close" data-dismiss="modal">
-        <span>&times;</span>
-      </button>
-      </div>
-      <div class="modal-body">
-        <p class="lead">
-          Hi there!
-        <p />
-        <p>
-          Thanks for visiting my website. It is currently under construction.
-          Please excuse any incomplete pages and missing information. I am working on completing everything
-          as soon as it is prudent to do so.
-        </p>
-        Sincerely,
-        <br />
-        Jay Karon
-      </div>
-    </div>
-  </div>
-</div>
+{% from 'macros/modal.njk' import modal_ %}
+
+{% set title %}
+  <i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:gold;"></i>
+  Under Construction!
+  <i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:gold;"></i>
+{% endset %}
+
+{% set content %}
+  <p class="lead">
+    Hi there!
+  <p />
+  <p>
+    Thanks for visiting my website. It is currently under construction.
+    Please excuse any incomplete pages and missing information. I am working on completing everything
+    as soon as it is prudent to do so.
+  </p>
+  Sincerely,
+  <br />
+  Jay Karon
+{% endset %}
+
+{{ modal_(title, content, "constructionModal")}}
+
+<script type="text/javascript">
+  window.onload = function() {
+    $('#constructionModal').modal('toggle');    // Pop up the construction modal on page load
+  };
+</script>

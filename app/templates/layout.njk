@@ -26,10 +26,9 @@
     {# {% include "partials/nav.njk" %} #}
     {{ nav_(activeIndex) }}
 
-    {% include "partials/contactModal.njk" %}
-
     {% block content %} {% endblock %}
 
+    {% include "partials/contactModal.njk" %}
     {# {% include "partials/constructionModal.njk" %} #}
 
     {% include "partials/footer.njk" %}
@@ -40,12 +39,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <!--  Custom Scripts -->
     <script type="text/javascript" src="../../../scripts/presto.js"></script>
-
-    <!-- Open Construction Modal on page load -->
-    <!-- <script type="text/javascript">
-      window.onload = function() {
-        $('#contactModal').modal('toggle');    // Pop up the construction modal on page load
-      };
-    </script> -->
   </body>
 </html>

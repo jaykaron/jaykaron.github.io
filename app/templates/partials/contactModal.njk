@@ -1,33 +1,23 @@
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="container-fluid text-center">
-          <h5 class="modal-title">Contact</h5>
-        </div>
-        <button type="button" class="close" data-dismiss="modal">
-        <span>&times;</span>
-      </button>
-      </div>
-      <div class="modal-body">
-        <p class="lead">
-          Thanks for wanting to contact me!
-        <p />
-        <ul>
-          <li>
-            <i class="fa fa-envelope-o" aria-hidden="true"></i> Email me at <a href="mailto:jay.karon.website@gmail.com">jay.karon.website@gmail.com</a>
-          </li>
-          <li>
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i> Find me on <a href="https://www.linkedin.com/in/jaykaron/">LinkedIn</a>
-          </li>
-          <li>
-            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Grab a copy of my <a href="../../../imgs/jayKaronResume.pdf">resume</a>
-          </li>
-        </ul>
-        Looking forward to hearing from you,
-        <br />
-        Jay Karon
-      </div>
-    </div>
-  </div>
-</div>
+{% from 'macros/modal.njk' import modal_ %}
+
+{% set content %}
+  <p class="lead">
+    Thanks for wanting to contact me!
+  <p />
+  <ul>
+    <li>
+      <i class="fa fa-envelope-o" aria-hidden="true"></i> Email me at <a href="mailto:jay.karon.website@gmail.com">jay.karon.website@gmail.com</a>
+    </li>
+    <li>
+      <i class="fa fa-linkedin-square" aria-hidden="true"></i> Find me on <a href="https://www.linkedin.com/in/jaykaron/">LinkedIn</a>
+    </li>
+    <li>
+      <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Grab a copy of my <a href="../../../imgs/jayKaronResume.pdf">resume</a>
+    </li>
+  </ul>
+  Looking forward to hearing from you,
+  <br />
+  Jay Karon
+{% endset %}
+
+{{ modal_("Contact", content, "contactModal") }}

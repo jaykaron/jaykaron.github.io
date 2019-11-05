@@ -1,0 +1,23 @@
+{% macro modal_(title, content, id) %}
+  {# creates a hidden modal
+    title - html
+    content - html
+  #}
+  <div class="modal fade" id="{{id}}" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="container-fluid text-center">
+            <h4 class="modal-title">{{title | safe}}</h4>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+        </div>
+        <div class="modal-body p-4">
+          {{ content | safe }}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
