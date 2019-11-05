@@ -1,4 +1,4 @@
-{% macro experienceCard_(title, subtitle, entries, imagePath, imageId) %}
+{% macro experienceCard_(title, subtitle, entries, imagePath, addtionalClass) %}
 {#  Makes an experience card
     title - string
     subtitle - string
@@ -16,7 +16,7 @@
       {% endfor %}
     </div>
     <div class="col-md-6">
-      <img class="cardImg mt-3" id="{{imageId}}" src="{{imagePath}}" />
+      <img class="cardImg mt-3 {{addtionalClass}}"  src="{{imagePath}}" />
     </div>
   </div>
 {% endset %}
