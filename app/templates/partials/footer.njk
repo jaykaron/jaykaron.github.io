@@ -1,7 +1,16 @@
 <footer>
-  © Jay Karon 2017.<br />
-  <span class="small">
-    The use of any trademarks represent only the company or product to which they refer
-    and does not indicate endorsement of or affiliation with Jay Karon by the trademark holder.
-  </span>
+  © Jay Karon 2017
+  <br/>
+  {% set links = [
+    ["../../../", "Home"],
+    ["../../../experience/", "Experience & Education"],
+    ["../../../projects/", "Projects"],
+    ["../../../skills/", "Skills & Interests"]
+  ] %}
+  <div class="m-1">
+    {% for link in links %}
+      <a class="badge badge-dark" href="{{ link[0] }}"> {{ link[1] }}</a>
+    {% endfor %}
+    <a class="badge badge-dark" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+  </div>
 </footer>
