@@ -6,7 +6,7 @@
   #}
   <div class="card text-center preview border-secondary {{additionalClass}}">
     <div class="card-body">
-      <h4 class="card-title">{{ title }}</h4>
+      <h4 class="card-title">{{ title | safe }}</h4>
       <h6 class="h6 card-subtitle text-muted">{{ subtitle }}</h6>
       <hr class="bg-secondary"/>
       {{ content | safe }}
