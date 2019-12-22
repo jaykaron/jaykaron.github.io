@@ -40,11 +40,15 @@ function init(){
   mainLayer.activate();
   
   initBackground();
-  initMusic();
+  
   
   initWelcome();
 }
 function newGame() {
+  if (music.paused) {
+    initMusic();
+  }
+  
   mainLayer.removeChildren();
   
   level = 1;
