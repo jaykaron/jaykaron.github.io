@@ -49,7 +49,7 @@ function watchMarkdown(cb) {
   browserSyncServer(cb);
   process.chdir(templateDir)
   gulp.watch('../pages/**/*.md', buildMarkdown);
-  gulp.watch('**/*.html').on('change', reload);
+  gulp.watch('../../**/*.html').on('change', () => {return reload();});
 }
 
 exports.build = build;
