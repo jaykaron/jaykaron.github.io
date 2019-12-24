@@ -1,6 +1,6 @@
 = yaml =
 title: 'How To: Absurd Scientific Advice for Common Real-World Problems'
-subtitle: 
+subtitle: 'Absurd but easily modelled'
 img: 'howto.jpg'
 = yaml =
 * Author: Randall Munroe
