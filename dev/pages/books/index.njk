@@ -7,6 +7,7 @@
 {% set metaDescription = 'Reviews of books by Jay Karon' %}
 
 {% block content %}
+    <div class="row d-flex justify-content-around mx-3 mt-5">
     {% set cardContent %}
         <p class="text-left">
             I wanted to get myself to read more and I figured documenting
@@ -29,5 +30,6 @@
             <a href="mailto:jay.karon.website@gmail.com">jay.karon.website@gmail.com</a>!
         </p>
     {% endset %}
-{{card_("Book Reviews", "", cardContent, additionalClass='col-lg-5 mt-5')}}
+    {{card_("Book Reviews", "", cardContent, additionalClass='col-lg-5')}}
+    </div>
 {% endblock %}

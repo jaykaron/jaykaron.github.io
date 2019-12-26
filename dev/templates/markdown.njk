@@ -7,11 +7,11 @@
 {% set metaDescription = 'Reviews of {{{{file.frontMatter.title}}' %}
 
 {% block content %}
-{% set review %}
-<div>
-    <img src='imgs/{{file.frontMatter.img}}' id="cover">
-    {{contents | safe}}
+<div class="row d-flex justify-content-around mx-3 mt-1">
+    {% set review %}
+        {{contents | safe}}
+
+    {% endset %}
+    {{card_(file.frontMatter.title, file.frontMatter.subtitle, review, additionalClass='col-lg-6')}}
 </div>
-{% endset %}
-{{card_(file.frontMatter.title, file.frontMatter.subtitle, review, additionalClass='col-lg-6')}}
 {% endblock %}
