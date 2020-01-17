@@ -1,0 +1,30 @@
+= yaml =
+title: '<< title >>'
+subtitle: '<< some pithy remark>>'
+= yaml =
+![Cover](imgs/<<cover.img>>)
+* Author: << author >>
+* Published: << Month Year >>
+* Read: << Month Year >>
+
+
+## Description
+Lorem ipsum
+
+
+## The Good
+
+
+## The Bad
+
+
+## Final Verdict
+
+
+## Ratings <small>(out of 5)</small>
+* Informational: ★★★½
+  * Justification
+  * The high information density and sometimes lack of context made it hard to retain information
+* Enjoyable: ★★½
+  * The academic style deflated the excitement a little
+* Would Recommend: No
