@@ -6,35 +6,43 @@ var reload = browserSync.reload;
 var frontMatter = require('gulp-front-matter');
 var markdown = require('gulp-markdown');
 var wrap = require("gulp-wrap");
+const htmlmin = require('gulp-htmlmin');
 
 let rootDir = process.cwd();
 let templateDir = rootDir + "/dev/templates";
 
 // Static server
 function browserSyncServer(cb) {
-    browserSync.init({
-        server: {
-            baseDir: rootDir
-        }
-    });
+  browserSync.init({
+    server: {
+      baseDir: rootDir
+    }
+  });
+}
+
+const htmlMinConfig = {
+  collapseWhitespace: true,
+  removeComments: true
 }
 
 function build(cb) {
   // Gets .html and .nunjucks files in pages
   return gulp.src('dev/pages/**/*.+(html|nunjucks|njk)')
-  // Renders template with nunjucks
-  .pipe(nunjucksRender({
+    // Renders template with nunjucks
+    .pipe(nunjucksRender({
       path: ['dev/templates']
     }))
-  // output files in root directory
-  .pipe(gulp.dest('.'))
+    .pipe(htmlmin(htmlMinConfig))
+    // output files in root directory
+    .pipe(gulp.dest('.'))
 }
 
 function buildMarkdown(cb) {
   return gulp.src('../pages/**/*.md')
-    .pipe(frontMatter({remove: true}))
+    .pipe(frontMatter({ remove: true }))
     .pipe(markdown())
-    .pipe(wrap({src:'markdown.njk'}, {}, {engine: 'nunjucks'}))
+    .pipe(wrap({ src: 'markdown.njk' }, {}, { engine: 'nunjucks' }))
+    .pipe(htmlmin(htmlMinConfig))
     .pipe(gulp.dest('../..'));
 }
 
@@ -49,13 +57,13 @@ function watchMarkdown(cb) {
   browserSyncServer(cb);
   process.chdir(templateDir)
   gulp.watch('../pages/**/*.md', buildMarkdown);
-  gulp.watch('../../**/*.html').on('change', () => {return reload();});
+  gulp.watch('../../**/*.html').on('change', () => { return reload(); });
 }
 
 exports.build = build;
 exports.watch = watch;
 exports.buildMarkdown = () => {
-  process.chdir(templateDir); 
+  process.chdir(templateDir);
   return buildMarkdown();
 }
 exports.watchMarkdown = watchMarkdown
