@@ -11,97 +11,95 @@
 
     {% set programmingContent %}
     <div class="row justify-content-around">
-        <div class="col-md-5">
-          <ul class="skillsList">
-            <li>
-              <strong>Languages</strong> - <small>(in order of familiarity)</small>
-              <ul>
-                  <li>Python - with packages like Django and NumPy</li>
-                  <li>JavaScript - with Node and npm</li>
-                  <li>Java, C - basic familiarity with these guys</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Algorithms & Datastructures</strong>
-              <ul>
-                  <li>Favourite datastructure - Binomial Heap</li>
-                  <li>Favourite paradigm - Divide & Conquer</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Computer Vision</strong> - Took a 4th year course on this topic and really enjoyed it!
-              I love how you can almost directly apply math on images and get meaningful results.
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-5">
-          <ul class="skillsList">
-            <li>
-              <strong>Full Stack</strong> - From the Linux server to the CSS framework, I worked on every part of a web application.
-            </li>
-            <li>
-              <strong>Linux</strong> - managing databases and firewalls on the server, also general ease
-              at the command line.
-            </li>
-            <li>
-              <strong>Databases</strong> - Designed and maintained PostgreSQL DBs. Some experience with NoSQL (MongoDB).
-            </li>
-            <li>
-              <strong>Docker</strong> - Set up a unified development environment for a team using containers.
-            </li>
-            <li>
-              <strong>Git</strong> - No other way to write code. Check out my <a href="https://github.com/jaykaron">GitHub</a>!
-            </li>
-          </ul>
-        </div>
-    </div>
-
-      <div class="iconHolder">
-        <i class="fa fa-code" aria-hidden="true"></i>
+      <div class="col-md-6">
+        <ul class="skillsList">
+          <li>
+            <strong>Languages</strong> - <small>(in order of familiarity)</small>
+            <ul>
+              <li>Python - programming language of choice. With packages like Django and NumPy</li>
+              <li>JavaScript (& TS) - with all the npm goodies</li>
+              <li>Java, C - basic familiarity with these guys</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Databases</strong> - Designing and maintaining both PostgreSQL and Mongo DBs
+          </li>
+          <li>
+            <strong>Web Tech</strong> - React, D3, Webpack... Remember when HTML was enough to make a website?
+          </li>
+        </ul>
       </div>
-    {% endset %}
-    {{ card_('Programming', '', programmingContent, additionalClass='col-lg-10')}}
+      <div class="col-md-5">
+        <ul class="skillsList">
+          <li>
+            <strong>AWS Services</strong> - S3, Lambda, SQS... Makes developing more convenient than one day shipping
+          </li>
+          <li>
+            <strong>Unix</strong> - I have forsaken the desktop for the command line
+          </li>
+          <li>
+            <strong>Docker</strong> - Stop installing things and start developing
+          </li>
+          <li>
+            <strong>Git</strong> - No other way to write code. Check out my <a
+              href="https://github.com/jaykaron">GitHub</a>!
+          </li>
+          <li>
+            <strong>Computer Vision</strong> - The magic of CV: <code>function(image) => return math(image)</code> 🎉
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
+  <div class="iconHolder mb-2">
+    <i class="fa fa-code" aria-hidden="true"></i>
+  </div>
+  {% endset %}
+  {{ card_('Programming', '', programmingContent, additionalClass='col-lg-10')}}
+</div>
 
 <div class="row d-flex justify-content-around mx-1">
   {% set lifeContent %}
-    <ul class="skillsList">
-      <li>
-        <strong>Math</strong> - I happen to be pretty good at this and enjoy it too! (Award on <a href="../../../experience">experience</a> page.)
-      </li>
-      <li>
-        <strong>Fast Learner</strong> - The trick, the ability to effictively skim results on Google and Stack Overflow.
-      </li>
-      <li>
-        <strong>Hard Working</strong> - People sometimes ask if I'm a morning person or a night person. I reply "a person person".
-      </li>
-      <li>
-        <strong>Good Communicator</strong> - I actually think I'm just a good listener,
-        but often this is enough to pass as a good communicator.
-      </li>
-    </ul>
-    <div class="iconHolder">
-      <i class="fa fa-wrench" aria-hidden="true"></i>
-    </div>
+  <ul class="skillsList">
+    <li>
+      <strong>Math</strong> - I happen to be pretty good at this and enjoy it too! (Award on <a
+        href="../../../experience">experience</a> page)
+    </li>
+    <li>
+      <strong>Fast Learner</strong> - The trick, the ability to effictively skim results on Google and Stack Overflow
+    </li>
+    <li>
+      <strong>Hard Working</strong> - People sometimes ask if I'm a morning person or a night person. I reply "a
+      person person"
+    </li>
+    <li>
+      <strong>Good Communicator</strong> - I actually think I'm just a good listener,
+      but often this is enough to pass as a good communicator
+    </li>
+  </ul>
+  <div class="iconHolder">
+    <i class="fa fa-wrench" aria-hidden="true"></i>
+  </div>
   {% endset %}
   {{ card_('Life Skills', '', lifeContent, additionalClass='col-lg-5')}}
 
 
   {% set miscContent %}
-      <ul class="skillsList">
-        <li>
-          <strong>Hebrew</strong> - The lingua franca of Jews everywhere. Able to hold a casual conversation.
-        </li>
-        <li>
-          <strong>Jewish Studies</strong> - Delving into Judaism's laws and meaning is a daunting yet rewarding endeavor.
-        </li>
-        <li>
-          <strong>Aspiring Bookbinder</strong> - I really want to pick this up, but don't yet have any books to bind.
-        </li>
-      </ul>
-      <div class="iconHolder">
-        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-      </div>
+  <ul class="skillsList">
+    <li>
+      <strong>Reading</strong> - Check out my <a href='/books'>book reviews</a>!
+    </li>
+    <li>
+      <strong>Repairing things</strong> - My motto is: "if you want it done right, don't do it yourself", but
+      that is not nearly as much fun
+    </li>
+    <li>
+      <strong>Bookbinding</strong> - Unlike e-books, paper books still fall apart
+    </li>
+  </ul>
+  <div class="iconHolder">
+    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+  </div>
   {% endset %}
   {{ card_('Other Skills & Interests', '', miscContent, additionalClass='col-lg-5')}}
 </div>
