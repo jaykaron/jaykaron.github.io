@@ -7,6 +7,42 @@
 
 {% block content %}
   <div class="d-flex justify-content-center">
+    {{ experienceCard_('Full Stack Developer', 'Mapsted',
+      [['June 2020 - Present', '
+      <p>
+        Full-stack web developer building control and integration systems for the core positioning platform.
+      </p>'],
+      ['Highlights:', '
+      <ul>
+        <li>
+          developing internal and client-facing integration platforms
+        </li>
+        <li>
+          introducing tooling to the team like <strong>eslint</strong> and <strong>docker</strong>
+        </li>
+      </ul>']],
+      'imgs/mapsted.png', ''
+      ) }}
+  </div>
+  <div class="d-flex justify-content-center">
+    {{ experienceCard_('Quantum Researcher', 'Intelligent Data Analytics',
+      [['July 2020 - Present', '
+      <p>
+        Researching the current usability of Quantum Computing to hard optimization problems.
+      </p>'],
+      ['Results:', '
+      <ul>
+        <li>
+          wrote a report on the results on current Hybrid Algorithms compared to purely calssical methods. 
+        </li>
+        <li>
+          solved molecular conformation models and scheduling problems with both classical and quantum methods
+        </li>
+      </ul>']],
+      'imgs/qubit.png', ''
+      ) }}
+  </div>
+  <div class="d-flex justify-content-center">
     {{ experienceCard_('Full Stack Developer', 'Geospatial Visual Analytics Lab - York University',
       [['', '<p>Developed a web system to process, store and display water
       depth data from a variety of sources and formats.
@@ -58,7 +94,7 @@
       </ul>
     {% endset %}
 
-    {{ experienceCard_('HBSc of Computer Science', 'Lassonde School of Engineering - York University',
+{{ experienceCard_('HBSc of Computer Science', 'Lassonde School of Engineering - York University',
       [['September 2016 - August 2019', '
       <p>
         Completed an honours bachelors of Computer. My favourite courses were
@@ -67,25 +103,32 @@
       ['Notable achievements:', yorkContent1]],
       'imgs/lassondeYork.jpg', 'widePic'
       ) }}
-   </div>
-   <div class="d-flex justify-content-center">
-     {% set louisContent1 %}
-       <ul>
-         <li>
-           assessing donor activity on fundraising database software <strong>Raiser's Edge</strong>
-         </li>
-         <li>
-           creating dynamic <strong>Excel</strong> spreadsheets using <strong>VBA</strong> macros
-         </li>
-         <li>
-           making custom <strong>Word</strong> templates
-         </li>
-         <li>
-           assisting in office duties such as writing letters and answering phone calls
-         </li>
-       </ul>
-      {% endset %}
-     {{ experienceCard_('Donor Information Coordinator', 'Louis Brier Jewish Aged Foundation',
+</div>
+<div class="d-flex justify-content-center">
+{% set louisContent1 %}
+<ul>
+  <li>
+    assessing donor activity on fundraising database software
+    <strong>Raiser's Edge</strong>
+  </li>
+  <li>
+    creating dynamic
+    <strong>Excel</strong>
+    spreadsheets using
+    <strong>VBA</strong>
+    macros
+  </li>
+  <li>
+    making custom
+    <strong>Word</strong>
+    templates
+  </li>
+  <li>
+    assisting in office duties such as writing letters and answering phone calls
+  </li>
+</ul>
+{% endset %}
+{{ experienceCard_('Donor Information Coordinator', 'Louis Brier Jewish Aged Foundation',
        [['July 2016 - August 2016', '
        <p>
          A summer internship working for the Louis Brier Jewish Aged Foundation, a foundation
@@ -95,9 +138,10 @@
        ['Responsibilities included:', louisContent1]],
        'imgs/louisbrier2.png', ''
        ) }}
-   </div>
-  <div class="d-flex justify-content-center"> <!-- Moshava -->
-    {{ experienceCard_('Summer Camp Counselor', 'Camp Moshava Ennismore',
+</div>
+<div class="d-flex justify-content-center">
+<!-- Moshava -->
+{{ experienceCard_('Summer Camp Counselor', 'Camp Moshava Ennismore',
       [['July 2015 - August 2015', '
       <p>
         Co-piloted a bunk of 10 rambunctious pre-teens for the summer at Camp Moshava Ennismore,
@@ -117,5 +161,5 @@
       </ul>']],
       'imgs/moshava.jpg', ''
       ) }}
-  </div>
+</div>
 {% endblock %}
