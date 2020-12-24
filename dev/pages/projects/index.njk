@@ -57,6 +57,11 @@
     <a href="imgs/treeReport.pdf" class="btn btn-primary mx-2">Paper</a><a href="imgs/treePresentation.pdf" class="btn btn-primary mx-2">Slides</a>',
     additionalClass=cardClass) }}
 
+    {{ card_('Tanakh Grepper', '', '
+    <h6 class="card-subtitle mb-2 text-muted">Run Regular Expressions on Tanakh.</h6>
+    <a href="/tanakh-grepper" class="btn btn-primary mx-2">Enter</a>',
+    additionalClass=cardClass) }}
+
     {{ card_('Hoodie', '', '
     <h6 class="card-subtitle mb-2 text-muted">A <strong>GIS</strong> web app made for a week-long university competition.</h6>
     <a href="https://github.com/jaykaron/Hoodie" class="btn btn-primary mx-2">Info</a> <a href="https://jaykaron.github.io/Hoodie/" class="btn btn-primary mx-2">App</a>',
@@ -96,48 +101,60 @@
 
 {% set aawModalContent %}
 <p>
-  Built with <a href="http://nadavhames.com/">Nadav Hames</a> for a 4th year CS course,
-  the Algorithmics Animation Workshop (AAW) is a website that lets users visualize and interact
-  with many famous algorithms.
+  Built with
+  <a href="http://nadavhames.com/">Nadav Hames</a>
+  for a 4th year CS course, the Algorithmics Animation Workshop (AAW) is a website that lets users visualize and interact with many famous algorithms.
 </p>
 <p>
-  Hosted by York University's CS department, it features an easy-to-use JS library built with D3 to allow other
-  students to continue to develop and add algorithm visualizations.
+  Hosted by York University's CS department, it features an easy-to-use JS library built with D3 to allow other students to continue to develop and add algorithm visualizations.
 </p>
 <p>
   To learn more:
 </p>
 <ul>
-  <li>Visit the <a href="https://www.eecs.yorku.ca/~aaw/">website</a></li>
-  <li>Watch a demo on <a href="https://youtube.com/watch/?v=jBzyqOFDWDY">Youtube</a></li>
-  <li>View the <a href="imgs/aawPresentation.pdf">presentation slides</a> about it</li>
+  <li>Visit the
+    <a href="https://www.eecs.yorku.ca/~aaw/">website</a>
+  </li>
+  <li>Watch a demo on
+    <a href="https://youtube.com/watch/?v=jBzyqOFDWDY">Youtube</a>
+  </li>
+  <li>View the
+    <a href="imgs/aawPresentation.pdf">presentation slides</a>
+    about it</li>
 </ul>
 {% endset %}
 {{ modal_("AAW", aawModalContent, 'aawModal')}}
 
 {% set websiteModalContent %}
 <p>
-  After learning a little bit of <strong>HTML</strong>, <strong>CSS</strong>
-  and <strong>JavaScript</strong> in high-school and university, I wanted to hone my skills
-  and get some experience using some newer web technologies.
+  After learning a little bit of
+  <strong>HTML</strong>,
+  <strong>CSS</strong>
+  and
+  <strong>JavaScript</strong>
+  in high-school and university, I wanted to hone my skills and get some experience using some newer web technologies.
 </p>
 <p>
-  I started out using only vanilla <strong>jQuery</strong> and <strong>SASS</strong>,
-  but after spending a considerable amount of time working on this <a href="misc/oldPage.html">cool nav-bar</a>
-  <small>(please excuse the color scheme)</small>, I asked
-  myself <i>"Was that really worth it?"</i> and switched to <strong>Bootstrap</strong>.
+  I started out using only vanilla
+  <strong>jQuery</strong>
+  and
+  <strong>SASS</strong>, but after spending a considerable amount of time working on this
+  <a href="misc/oldPage.html">cool nav-bar</a>
+  <small>(please excuse the color scheme)</small>, I asked myself
+  <i>"Was that really worth it?"</i>
+  and switched to
+  <strong>Bootstrap</strong>.
 </p>
 <p>
-  With Bootstrap it takes about 2 minutes to make the nav-bar at the top of this page
-  which works across browsers and has mobile support. So that definitely sped things up.
+  With Bootstrap it takes about 2 minutes to make the nav-bar at the top of this page which works across browsers and has mobile support. So that definitely sped things up.
 </p>
 <p>
-  After that it was pretty smooth sailing, all that was required was time.
-  Time for going through Bootstrap's documentation, time for fiddling with the CSS, etc.
+  After that it was pretty smooth sailing, all that was required was time. Time for going through Bootstrap's documentation, time for fiddling with the CSS, etc.
 </p>
 <h5>2019 Update</h5>
 <p>
-  I was tired of all the copy and pasted code in HTML so I started using <b>Nunjucks</b>, a JS templating engine and
+  I was tired of all the copy and pasted code in HTML so I started using
+  <b>Nunjucks</b>, a JS templating engine and
   <b>Gulp</b>
   to spit out the static site. This has reduced the LOC signifcantly and has made it fun to update the website again.
 </p>
@@ -152,21 +169,25 @@
   So far we have found out that their are lots of links. We are working on sorting them out.
 </p>
 <p>
-  We are using <strong>Python</strong> to scrape Wikipedia and putting the results into a <strong>Neo4J</strong>
-  database,
-  a system for graph databases that has a special query language called <strong>Cypher</strong>.
+  We are using
+  <strong>Python</strong>
+  to scrape Wikipedia and putting the results into a
+  <strong>Neo4J</strong>
+  database, a system for graph databases that has a special query language called
+  <strong>Cypher</strong>.
 </p>
 <p>
-  You can see the existing code in the <a href="https://github.com/jaykaron/WikiGraph">Github repository</a>.
-  Here's a <a href="imgs/Science.svg">picture</a> of a lot of the articles connected to Science and the links between
-  them to keep you busy.
+  You can see the existing code in the
+  <a href="https://github.com/jaykaron/WikiGraph">Github repository</a>. Here's a
+  <a href="imgs/Science.svg">picture</a>
+  of a lot of the articles connected to Science and the links between them to keep you busy.
 </p>
 <h5>Update</h5>
 <p>
-  As we were working on this project, <a href="https://jwn.gr/">Jacob Wenger</a> made an beautiful site,
-  <a href="https://www.sixdegreesofwikipedia.com/">Six Degrees of Wikipedia</a>, that does something similar to
-  what we were envisioning. In addition, processing was taking us forever because we were working on consumer laptops.
-  Due to those two factors we decided to cancel the project.
+  As we were working on this project,
+  <a href="https://jwn.gr/">Jacob Wenger</a>
+  made an beautiful site,
+  <a href="https://www.sixdegreesofwikipedia.com/">Six Degrees of Wikipedia</a>, that does something similar to what we were envisioning. In addition, processing was taking us forever because we were working on consumer laptops. Due to those two factors we decided to cancel the project.
 </p>
 {% endset %}
 {{ modal_("Wikipedia Graph", wikiModalContent, 'wikiModal')}}
