@@ -2,7 +2,7 @@
 title: 'Pro Git'
 subtitle: ''
 = yaml =
-![Cover](imgs/progit.jpeg)
+![Cover](media/progit.jpeg)
 * Author: Scott Chacon
 * Published: August 2009
 * Read: January 2020
@@ -23,7 +23,7 @@ command line switches (see image below) of Git's many options. The final chapter
 which was on Git's internals, while not often applicable, was very interesting and
 gave me an appreciation for how things work.
 
-<img src="imgs/gitlog.png" title="Heck No!" alt="git log - 600 options" style="max-width:90%;"/>
+<img src="media/gitlog.png" title="Heck No!" alt="git log - 600 options" style="max-width:90%;"/>
 <br>
 <br>
 

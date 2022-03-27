@@ -2,7 +2,7 @@
 title: 'How To: Absurd Scientific Advice for Common Real-World Problems'
 subtitle: 'Absurd but easily modelled'
 = yaml =
-![Cover](imgs/howto.jpg)
+![Cover](media/howto.jpg)
 * Author: Randall Munroe
 * Published: September 2019
 * Read: December 2019
@@ -36,7 +36,7 @@ calvary charge out of [Helm's Deep](https://www.youtube.com/watch?v=mE328QhF-VA)
 ## The Bad
 Nothing comes to mind, so why look for them?
 
-[![Bad Opinions](https://imgs.xkcd.com/comics/bad_opinions.png)](https://xkcd.com/2051)
+[![Bad Opinions](https://media.xkcd.com/comics/bad_opinions.png)](https://xkcd.com/2051)
 
 ## Final Verdict
 While I didn't learn much practical science that stuck with me, the book was a
@@ -57,4 +57,4 @@ can be surprisingly accurate.
 * Would Recommend: Yes
 
 
-[xkcdComic]: https://imgs.xkcd.com/comics/bad_opinions.png
+[xkcdComic]: https://media.xkcd.com/comics/bad_opinions.png

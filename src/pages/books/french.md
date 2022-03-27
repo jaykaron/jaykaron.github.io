@@ -2,7 +2,7 @@
 title: 'The French Revolution: A Very Short Introduction'
 subtitle: 'More like a short refresher...'
 = yaml =
-![Cover](imgs/french.jpeg)
+![Cover](media/french.jpeg)
 * Author: William Doyle
 * Published: August 2001
 * Read: December 2019
