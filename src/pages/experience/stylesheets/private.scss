@@ -1,0 +1,30 @@
+ /*The css for the Experience page*/
+ .card {
+   min-height: 20rem;
+   margin: 1rem;
+   max-width: 60rem;
+
+   p {
+     line-height: 120%;
+   }
+
+   ul {
+      line-height: 140%;
+   }
+
+   img {
+     width: 100%;
+     max-width: 250px;
+   }
+ }
+
+ #lassondeLogo {
+   max-width: 400px;
+ }
+ #netivLogo {
+   max-width: 330px;
+ }
+
+ul ul {
+  font-size: 95%;
+}

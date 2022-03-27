@@ -2,7 +2,7 @@
 title: '<< title >>'
 subtitle: '<< some pithy remark>>'
 = yaml =
-![Cover](media/<<cover.img>>)
+![Cover](/media/<<cover.img>>)
 * Author: << author >>
 * Published: << Month Year >>
 * Read: << Month Year >>

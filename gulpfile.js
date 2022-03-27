@@ -1,5 +1,6 @@
 var browserSync = require('browser-sync').create();
 var gulp = require('gulp');
+const flatten = require("gulp-flatten");
 var nunjucksRender = require('gulp-nunjucks-render');
 var reload = browserSync.reload;
 var frontMatter = require('gulp-front-matter');
@@ -38,8 +39,8 @@ function pages(cb) {
 } 
 
 function stylesheets(cb) {
-  return gulp.src("./src/stylesheets/**/*.css")
-    .pipe(gulp.dest("./build/stylesheets"))
+  return gulp.src("./src/**/stylesheets/**/*.css", { base: "./src/pages" })
+    .pipe(gulp.dest("./build"))
 }
 
 function buildMarkdown(cb) {
@@ -52,7 +53,9 @@ function buildMarkdown(cb) {
 }
 
 function media(cb) {
-  return gulp.src("./src/media/**")
+  return gulp.src("./**/media/**")
+    // all media goes into a single folder
+    .pipe(flatten())
     .pipe(gulp.dest("./build/media"))
 }
 
