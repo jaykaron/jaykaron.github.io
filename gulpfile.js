@@ -1,4 +1,3 @@
-var fs = require('fs');
 var browserSync = require('browser-sync').create();
 var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
@@ -9,13 +8,13 @@ var wrap = require("gulp-wrap");
 const htmlmin = require('gulp-htmlmin');
 
 let rootDir = process.cwd();
-let templateDir = rootDir + "/dev/templates";
+let templateDir = rootDir + "/src/templates";
 
 // Static server
 function browserSyncServer(cb) {
   browserSync.init({
     server: {
-      baseDir: rootDir
+      baseDir: rootDir + "/build"
     }
   });
 }
@@ -25,16 +24,22 @@ const htmlMinConfig = {
   removeComments: true
 }
 
-function build(cb) {
+const build = gulp.parallel(pages, media, stylesheets);
+
+function pages(cb) {
   // Gets .html and .nunjucks files in pages
-  return gulp.src('dev/pages/**/*.+(html|nunjucks|njk)')
+  return gulp.src('src/pages/**/*.+(html|nunjucks|njk)')
     // Renders template with nunjucks
     .pipe(nunjucksRender({
-      path: ['dev/templates']
+      path: ['src/templates']
     }))
     .pipe(htmlmin(htmlMinConfig))
-    // output files in root directory
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest('./build'));
+} 
+
+function stylesheets(cb) {
+  return gulp.src("./src/stylesheets/**/*.css")
+    .pipe(gulp.dest("./build/stylesheets"))
 }
 
 function buildMarkdown(cb) {
@@ -43,14 +48,18 @@ function buildMarkdown(cb) {
     .pipe(markdown())
     .pipe(wrap({ src: 'markdown.njk' }, {}, { engine: 'nunjucks' }))
     .pipe(htmlmin(htmlMinConfig))
-    .pipe(gulp.dest('../..'));
+    .pipe(gulp.dest('../../build'));
 }
 
+function media(cb) {
+  return gulp.src("./src/media/**")
+    .pipe(gulp.dest("./build/media"))
+}
 
 function watch(cb) {
   browserSyncServer(cb);
-  gulp.watch('dev/(pages|templates)/**/*.+(html|nunjucks|njk)', build);
-  gulp.watch('**/*.html').on('change', reload);
+  gulp.watch('src/(pages|templates)/**/*.+(html|nunjucks|njk)', build);
+  gulp.watch('build/*.html').on('change', reload);
 }
 
 function watchMarkdown(cb) {
