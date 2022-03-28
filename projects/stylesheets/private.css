@@ -1,0 +1,9 @@
+/* line 1, private.scss */
+.card {
+  max-width: 30rem;
+}
+
+/* line 4, private.scss */
+.card-subtitle {
+  line-height: 125%;
+}

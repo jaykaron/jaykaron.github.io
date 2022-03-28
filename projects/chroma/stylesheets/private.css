@@ -1,0 +1,11 @@
+/* line 2, private.scss */
+#creditsBox p {
+  margin-bottom: 0.5rem;
+}
+
+/* line 8, private.scss */
+.card-body p {
+  max-width: 50rem;
+  margin-right: auto;
+  margin-left: auto;
+}
