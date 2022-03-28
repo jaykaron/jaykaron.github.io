@@ -9,7 +9,10 @@
 {% block content %}
 <div class="row d-flex justify-content-around mx-3 mt-1">
     {% set review %}
-        {{contents | safe}}
+        {# The line below is not nunjucks syntax it is replaced with the rendered
+            markdown by gulp-wrap
+         #}
+        <%= contents %>
 
     {% endset %}
     {{card_(file.frontMatter.title, file.frontMatter.subtitle, review, additionalClass='col-lg-6')}}
