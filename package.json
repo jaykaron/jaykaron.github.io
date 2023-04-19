@@ -14,7 +14,7 @@
     "gulp-wrap": "^0.15.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.29.1"
   },
   "scripts": {
     "build": "gulp build",
